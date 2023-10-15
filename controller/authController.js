@@ -1,4 +1,4 @@
-const { compare } = require("bcrypt");
+const { compare } = require("bcryptjs");
 const { hashPassword, comparePassword } = require("../helpers/authHelper");
 const userModel = require("../models/userModel");
 const JWT = require("jsonwebtoken");
