@@ -12,8 +12,7 @@ const requireSignIn = async (req, res, next) => {
   } catch (error) {
     res.status(401).send({
       success: false,
-      error,
-      message: "Please login",
+      message:  error.message,
     });
   }
 };
